@@ -38,7 +38,9 @@ void Widget::paintGL()
 
     QMatrix4x4 modelViewMatrix;
     modelViewMatrix.setToIdentity();
-    modelViewMatrix.translate(0.0,0.0,-5.0);
+    modelViewMatrix.translate(0.0, 0.0, -5.0);
+    modelViewMatrix.rotate(30, 1.0, 0.0, 0.0);
+    modelViewMatrix.rotate(30, 0.0, 1.0, 0.0);
 
     m_texture ->bind(0);
 
